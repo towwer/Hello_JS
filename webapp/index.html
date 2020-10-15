@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Carga SAPUI5 , theme y control library -->
+	<meta charset="utf-8">
+	<title>Quickstart Tutorial</title>
+<!-- Carga SAPUI5 , theme y control library -->
+		<!-- - Cargar e inicializar SAPUI5 (bootstrapping) )
+		     Añadimos la biblioteca en la etiqueta bootstrap: sap.m.
+		-->
+		<!-- - Lugar donde se encuentra el index.js
+		       module:Hello_JS/webapp/index -->
+		<!-- - "resourceroots" Es el folder inicial donde se empieza la aplicación
+		       por default es el sap-ui-core.js.
+		       Para esta aplicación inicia en Hello_JS/webapp-->
+		<script
+	    id="sap-ui-bootstrap"
+		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_belize"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-resourceroots='{"Hello_JS": "./"}'
+		data-sap-ui-onInit="module:Hello_JS/index"
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true">
+	</script>
+</head>
+<!-- Cuerpo de la pantalla -->
+<body class="sapUiBody">
+  <div id="content"></div>                     <!-- div donde el botón SAPUI5 será desplegado -->
+  <p>Hello Arthur</p>
+</body>
+</html>
